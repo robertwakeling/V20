@@ -812,11 +812,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fill in the blanks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="owH-Sv-cPE">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fill in the blanks to answer the questions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="owH-Sv-cPE">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.08235294371843338" green="0.26274511218070984" blue="0.78039222955703735" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="All li" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RVg-ch-SYK">
+                                <rect key="frame" x="0.0" y="66" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.082352943720000002" green="0.26274511220000002" blue="0.78039222959999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -9044,7 +9051,6 @@
         <class className="CombustionThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CombustionThreeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="revealAnswer:"/>
                 <relationship kind="outlet" name="answerLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -9137,7 +9143,6 @@
         <class className="FuelsThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FuelsThreeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="checkAnswers:" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="co2" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="co2Tick" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="energy" candidateClass="UITextField"/>
@@ -9240,7 +9245,6 @@
         <class className="LifeCycleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LifeCycleViewController.h"/>
             <relationships>
-                <relationship kind="action" name="hideAndShow:"/>
                 <relationship kind="outlet" name="adolescence" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="adulthood" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="birth" candidateClass="UILabel"/>
@@ -9279,8 +9283,6 @@
         <class className="MatterThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MatterThreeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="checkAnswers:" candidateClass="UIButton"/>
-                <relationship kind="action" name="labelColour:"/>
                 <relationship kind="outlet" name="Gas" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="Liquid" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="Solid" candidateClass="UIButton"/>
@@ -9334,7 +9336,6 @@
         <class className="NeutralisationThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NeutralisationThreeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="answerChecker:" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="neutral" candidateClass="UITextField"/>
             </relationships>
         </class>
@@ -9420,7 +9421,6 @@
         <class className="SpecialisedViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SpecialisedViewController.h"/>
             <relationships>
-                <relationship kind="action" name="unhideTheAnswers:"/>
                 <relationship kind="outlet" name="correctAnswerEntry" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="presenceNucleus" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="question" candidateClass="UILabel"/>
@@ -9454,6 +9454,11 @@
         </class>
         <class className="TextfieldCheckerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TextfieldCheckerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonClear::" candidateClass="UITextField"/>
+                <relationship kind="action" name="checkAnswers:" candidateClass="UITextField"/>
+                <relationship kind="action" name="secondSaveUserEntries:" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="TypesThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TypesThreeViewController.h"/>
