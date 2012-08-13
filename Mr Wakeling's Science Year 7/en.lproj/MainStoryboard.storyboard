@@ -739,6 +739,7 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <connections>
+                                    <action selector="checkAnswers" destination="5O4-7f-qeZ" eventType="editingDidEnd" id="gpE-kM-LbN"/>
                                     <outlet property="delegate" destination="5O4-7f-qeZ" id="g8A-99-Qf4"/>
                                 </connections>
                             </textField>
@@ -749,6 +750,7 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <connections>
+                                    <action selector="checkAnswers" destination="5O4-7f-qeZ" eventType="editingDidEnd" id="5Y1-eD-ZTv"/>
                                     <outlet property="delegate" destination="5O4-7f-qeZ" id="YaL-VT-diw"/>
                                 </connections>
                             </textField>
@@ -759,6 +761,7 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <connections>
+                                    <action selector="checkAnswers" destination="5O4-7f-qeZ" eventType="editingDidEnd" id="He2-Hh-dkM"/>
                                     <outlet property="delegate" destination="5O4-7f-qeZ" id="j97-TO-vb4"/>
                                 </connections>
                             </textField>
@@ -769,13 +772,28 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <connections>
+                                    <action selector="checkAnswers" destination="5O4-7f-qeZ" eventType="editingDidEnd" id="YlG-R5-9NN"/>
                                     <outlet property="delegate" destination="5O4-7f-qeZ" id="4fj-nK-4b5"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aS2-hK-iDC">
+                                <rect key="frame" x="336" y="384" width="96" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="gPj-2O-g4c"/>
+                    <connections>
+                        <outlet property="coastal" destination="rBg-HY-HyX" id="8LJ-uo-wMN"/>
+                        <outlet property="desert" destination="0Gp-nI-qSm" id="D3C-Wj-Zcd"/>
+                        <outlet property="polar" destination="fDq-OG-AwY" id="1PE-Wc-wc1"/>
+                        <outlet property="scoreLabel" destination="aS2-hK-iDC" id="XTE-tp-IIo"/>
+                        <outlet property="woodland" destination="ZyW-Br-2nv" id="cLT-D3-VNj"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="5616" y="2614"/>
@@ -9000,6 +9018,7 @@
         <class className="CombustionThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CombustionThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="revealAnswer:"/>
                 <relationship kind="outlet" name="answerLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -9092,6 +9111,7 @@
         <class className="FuelsThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FuelsThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="checkAnswers:" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="co2" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="co2Tick" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="energy" candidateClass="UITextField"/>
@@ -9125,6 +9145,13 @@
         </class>
         <class className="HabitatsAssessmentViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HabitatsAssessmentViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="coastal" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="desert" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="polar" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="woodland" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="HabitatsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HabitatsViewController.h"/>
@@ -9187,6 +9214,7 @@
         <class className="LifeCycleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LifeCycleViewController.h"/>
             <relationships>
+                <relationship kind="action" name="hideAndShow:"/>
                 <relationship kind="outlet" name="adolescence" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="adulthood" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="birth" candidateClass="UILabel"/>
@@ -9225,6 +9253,8 @@
         <class className="MatterThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MatterThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="checkAnswers:" candidateClass="UIButton"/>
+                <relationship kind="action" name="labelColour:"/>
                 <relationship kind="outlet" name="Gas" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="Liquid" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="Solid" candidateClass="UIButton"/>
@@ -9363,6 +9393,7 @@
         <class className="SpecialisedViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SpecialisedViewController.h"/>
             <relationships>
+                <relationship kind="action" name="unhideTheAnswers:"/>
                 <relationship kind="outlet" name="correctAnswerEntry" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="presenceNucleus" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="question" candidateClass="UILabel"/>
@@ -9396,6 +9427,9 @@
         </class>
         <class className="TextfieldCheckerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TextfieldCheckerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="checkAnswers:" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="TypesThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TypesThreeViewController.h"/>
