@@ -90,6 +90,7 @@
 		D45B3B4215438AFC0077F110 /* LevelsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D45B3B4115438AFC0077F110 /* LevelsModel.m */; };
 		D464761F15A5F1C9009AC972 /* ButtonBackRed.png in Resources */ = {isa = PBXBuildFile; fileRef = D464761E15A5F1C9009AC972 /* ButtonBackRed.png */; };
 		D464762115A5F248009AC972 /* ButtonBackBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D464762015A5F248009AC972 /* ButtonBackBlue.png */; };
+		D467EB8F15D9411100B2AD61 /* HabitatsAssessmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D467EB8E15D9411100B2AD61 /* HabitatsAssessmentViewController.m */; };
 		D46DFB14154DB26F00E04A24 /* CellsLevelThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB13154DB26F00E04A24 /* CellsLevelThreeViewController.m */; };
 		D46DFB19154DCCB900E04A24 /* HazardSymbols.png in Resources */ = {isa = PBXBuildFile; fileRef = D46DFB18154DCCB900E04A24 /* HazardSymbols.png */; };
 		D46DFB1D154DCD5900E04A24 /* HazardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB1C154DCD5900E04A24 /* HazardsViewController.m */; };
@@ -325,6 +326,8 @@
 		D45B3B4115438AFC0077F110 /* LevelsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelsModel.m; sourceTree = "<group>"; };
 		D464761E15A5F1C9009AC972 /* ButtonBackRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBackRed.png; sourceTree = "<group>"; };
 		D464762015A5F248009AC972 /* ButtonBackBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBackBlue.png; sourceTree = "<group>"; };
+		D467EB8D15D9411100B2AD61 /* HabitatsAssessmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitatsAssessmentViewController.h; sourceTree = "<group>"; };
+		D467EB8E15D9411100B2AD61 /* HabitatsAssessmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabitatsAssessmentViewController.m; sourceTree = "<group>"; };
 		D46DFB12154DB26F00E04A24 /* CellsLevelThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellsLevelThreeViewController.h; sourceTree = "<group>"; };
 		D46DFB13154DB26F00E04A24 /* CellsLevelThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellsLevelThreeViewController.m; sourceTree = "<group>"; };
 		D46DFB18154DCCB900E04A24 /* HazardSymbols.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HazardSymbols.png; sourceTree = "<group>"; };
@@ -1131,6 +1134,8 @@
 				D49AA75F1592754B002A7D7A /* HabitatsViewController.h */,
 				D49AA7601592754B002A7D7A /* HabitatsViewController.m */,
 				D4FB78391597632300BBE2EB /* Habitats2.png */,
+				D467EB8D15D9411100B2AD61 /* HabitatsAssessmentViewController.h */,
+				D467EB8E15D9411100B2AD61 /* HabitatsAssessmentViewController.m */,
 			);
 			name = "Habitats 3";
 			sourceTree = "<group>";
@@ -1828,6 +1833,7 @@
 				D4B3189215C839C40040CEB6 /* MoonThreeViewController.m in Sources */,
 				D4B3189B15C8473E0040CEB6 /* BeyondThreeViewController.m in Sources */,
 				D4E1712615D1875D0095AFE2 /* CycleThreeAssessmentViewController.m in Sources */,
+				D467EB8F15D9411100B2AD61 /* HabitatsAssessmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
